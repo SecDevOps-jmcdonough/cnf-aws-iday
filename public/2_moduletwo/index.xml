@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshop Prerequisites on English</title>
+    <link>/2_moduletwo.html</link>
+    <description>Recent content in Workshop Prerequisites on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/2_moduletwo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Workshop Logistics</title>
+      <link>/2_moduletwo/21_logistics.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2_moduletwo/21_logistics.html</guid>
+      <description>Workshop Logistics Accessing an AWS environment For the AWS Immersion Days, we will provide you the following via email:
+ AWS sign in link IAM User w/ console access Password for the IAM User  If you are wanting to run through this in your own environment for training purposes, use the master CFT to deploy the base environment.
+ Accessing the FortiGate CNF Console FortiGate CNF and other SaaS solutions are tied to your FortiCloud.</description>
+    </item>
+    
+    <item>
+      <title>AWS Networking Concepts</title>
+      <link>/2_moduletwo/22_awsnetworkingconcepts.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2_moduletwo/22_awsnetworkingconcepts.html</guid>
+      <description>AWS Networking Concepts Before diving into the reference architecture for this workshop, let&amp;rsquo;s review core AWS networking concepts.
+AWS Virtual Private Cloud (VPC) is a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways.</description>
+    </item>
+    
+    <item>
+      <title>AWS Common Architecture Patterns</title>
+      <link>/2_moduletwo/23_awscommonarchitecturepatterns.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2_moduletwo/23_awscommonarchitecturepatterns.html</guid>
+      <description>AWS Common Architecture Patterns While there are many ways to organize your infrastructure there are two main ways to design your networking when using GWLB, centralized and distributed. From the perspective of networking, routing, and GWLBe placement. We will discuss this further below.
+FortiGate CNF is a SaaS offering that on the backend uses FortiGates, AWS GWLB, and GWLB endpoints to intercept customer traffic and inspect this transparently. As part of the deployment process for FortiGate CNF instances, the customer environment will need to implement VPC and ingress routing at the IGW to intercept the traffic to be inspected.</description>
+    </item>
+    
+    <item>
+      <title>FortiGate CNF Terminology</title>
+      <link>/2_moduletwo/24_fortigatecnfterminology.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2_moduletwo/24_fortigatecnfterminology.html</guid>
+      <description> FortiGate CNF Terminology    Term Description     CNF Console The console in which you deploy CNF instances and manage policy sets   CNF Instance A deployment of CNF resources in an auto scale group in the region of your choice   Policy Set The group of FW rules, objects, and security profile groups that are assigned to one or many CNF Instance(s)   Security Profile Group A group of Layer 7 inspection profiles such as DNS filter, and known bad IP blocking    </description>
+    </item>
+    
+  </channel>
+</rss>

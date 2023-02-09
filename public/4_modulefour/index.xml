@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshop Test Traffic on English</title>
+    <link>/4_modulefour.html</link>
+    <description>Recent content in Workshop Test Traffic on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/4_modulefour/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Distributed Ingress</title>
+      <link>/4_modulefour/41_distributedingress.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/4_modulefour/41_distributedingress.html</guid>
+      <description>Distributed Ingress For this traffic flow we will focus on the Application VPC. Distributed ingress is commonly used when there is a need to inspect traffic for a VPC that is directly accessible with an attached IGW and resources with a public Elastic IP (EIP) or behind a public load balancer (ie ALB, NLB, etc). The benefit of this design is that traffic does not need to traverse additional AWS networking components for inspection so each VPC is isolated from others.</description>
+    </item>
+    
+    <item>
+      <title>Distributed Egress</title>
+      <link>/4_modulefour/42_distributedegress.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/4_modulefour/42_distributedegress.html</guid>
+      <description>Distributed Egress For this traffic flow we will focus on the Application VPC. Distributed egress is commonly used when there is a need to inspect traffic for a VPC that has an attached IGW and resources with a public Elastic IP (EIP) or that are behind a NAT GW. The benefit of this design is that traffic does not need to traverse additional AWS networking components for inspection so each VPC is isolated from others.</description>
+    </item>
+    
+    <item>
+      <title>Centralized Egress</title>
+      <link>/4_modulefour/43_centralizedegress.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/4_modulefour/43_centralizedegress.html</guid>
+      <description>Centralized Egress For this traffic flow we will focus on the Shared Services, Workload, and Inspection VPCs. Centralized egress is commonly used when there is a strong desire to control egress traffic through a common set of NAT GWs in an egress or what we call an Inspection VPC. The benefit of this design is that you only need NAT GWs in the Inspection VPC (one per AZ) vs every VPC (one per AZ), which have an hourly cost.</description>
+    </item>
+    
+    <item>
+      <title>Centralized East West</title>
+      <link>/4_modulefour/44_centralizedeastwest.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/4_modulefour/44_centralizedeastwest.html</guid>
+      <description>Centralized East West For this traffic flow we will focus on the Shared Services, Workload, and Inspection VPCs. Centralized East West is commonly used when there is need for multiple VPCs in the same region to access common private resources such as a shared services VPC, premise items, or workloads/services in other VPCs. The benefit of this design is that this a flexible but simple way to interconnect many resources in the same region.</description>
+    </item>
+    
+  </channel>
+</rss>

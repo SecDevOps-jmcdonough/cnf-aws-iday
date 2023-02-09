@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.86.0" />
+    <meta name="description" content="FortiGate CNF Workshop">
+<meta name="author" content="Hiruy Aberra">
+
+    <link rel="icon" href="https://awsmedia.s3.amazonaws.com/favicon.ico" type="image/x-icon" />
+
+    <title>Distributed Egress :: English</title>
+
+    
+    <link href="/css/nucleus.css?1675961207" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1675961207" rel="stylesheet">
+    <link href="/css/hybrid.css?1675961207" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1675961207" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1675961207" rel="stylesheet">
+    <link href="/css/auto-complete.css?1675961207" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1675961207" rel="stylesheet">
+    <link href="/css/theme.css?1675961207" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1675961207" rel="stylesheet">
+    
+    <link href="/css/theme-mine.css?1675961207" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1675961207"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/4_modulefour/42_distributedegress.html">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" title="Go home"><img style="vertical-align:middle;margin:30px;" src="../../images/AWS-Logo_White-Color.png" height="125px">
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1675961207"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1675961207"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1675961207"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1_moduleone.html" title="Introduction" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1_moduleone.html">
+          Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2_moduletwo.html" title="Workshop Prerequisites" class="dd-item
+        
+        
+        
+        ">
+      <a href="/2_moduletwo.html">
+          Workshop Prerequisites
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_moduletwo/21_logistics.html" title="Workshop Logistics" class="dd-item ">
+        <a href="/2_moduletwo/21_logistics.html">
+        Workshop Logistics
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_moduletwo/22_awsnetworkingconcepts.html" title="AWS Networking Concepts" class="dd-item ">
+        <a href="/2_moduletwo/22_awsnetworkingconcepts.html">
+        AWS Networking Concepts
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_moduletwo/23_awscommonarchitecturepatterns.html" title="AWS Common Architecture Patterns" class="dd-item ">
+        <a href="/2_moduletwo/23_awscommonarchitecturepatterns.html">
+        AWS Common Architecture Patterns
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_moduletwo/24_fortigatecnfterminology.html" title="FortiGate CNF Terminology" class="dd-item ">
+        <a href="/2_moduletwo/24_fortigatecnfterminology.html">
+        FortiGate CNF Terminology
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3_modulethree.html" title="Workshop Hands On" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3_modulethree.html">
+          Workshop Hands On
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/3_modulethree/31_task1.html" title="Task 1: Subscribe to FortiGate CNF in AWS Marketplace" class="dd-item ">
+        <a href="/3_modulethree/31_task1.html">
+        Task 1: Subscribe to FortiGate CNF in AWS Marketplace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/3_modulethree/32_task2.html" title="Task 2: Onboard an AWS account to FortiGate CNF" class="dd-item ">
+        <a href="/3_modulethree/32_task2.html">
+        Task 2: Onboard an AWS account to FortiGate CNF
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/3_modulethree/33_task3.html" title="Task 3: Deploying CNF Instances and GWLBe endpoints" class="dd-item ">
+        <a href="/3_modulethree/33_task3.html">
+        Task 3: Deploying CNF Instances and GWLBe endpoints
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/3_modulethree/34_task4.html" title="Task 4: Create a policy set and apply it to a FortiGate CNF Instance" class="dd-item ">
+        <a href="/3_modulethree/34_task4.html">
+        Task 4: Create a policy set and apply it to a FortiGate CNF Instance
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4_modulefour.html" title="Workshop Test Traffic" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/4_modulefour.html">
+          Workshop Test Traffic
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_modulefour/41_distributedingress.html" title="Distributed Ingress" class="dd-item ">
+        <a href="/4_modulefour/41_distributedingress.html">
+        Distributed Ingress
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_modulefour/42_distributedegress.html" title="Distributed Egress" class="dd-item active">
+        <a href="/4_modulefour/42_distributedegress.html">
+        Distributed Egress
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_modulefour/43_centralizedegress.html" title="Centralized Egress" class="dd-item ">
+        <a href="/4_modulefour/43_centralizedegress.html">
+        Centralized Egress
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_modulefour/44_centralizedeastwest.html" title="Centralized East West" class="dd-item ">
+        <a href="/4_modulefour/44_centralizedeastwest.html">
+        Centralized East West
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5_modulefive.html" title="Providing Feedback" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5_modulefive.html">
+          Providing Feedback
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://fortinet.com/aws"><i class='far fa-lightbulb'></i> Fortinet's AWS Microsite</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://aws.amazon.com/marketplace/search/results?searchTerms=fortinet"><i class='fas fa-tools'></i> AWS MP Listings for Fortinet</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://docs.fortinet.com/cloud-solutions/aws"><i class='far fa-lightbulb'></i> Fortinet in AWS Docs</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://docs.fortinet.com/product/fortigate-cnf"><i class='fas fa-chalkboard-teacher'></i> FortiGate CNF Docs</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+
+    <a href="https://aws.amazon.com/privacy/?nc1=f_pr">Privacy</a> | <a
+        href="https://aws.amazon.com/terms/?nc1=f_pr">Site Terms</a> | <a
+        href="https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/license/cc-license.html">CC BY-SA 4.0</a>
+
+</left>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Secure AWS workloads with FortiGate CNF SaaS</a> > <a href='/4_modulefour.html'>Workshop Test Traffic</a> > Distributed Egress
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+
+
+<h1 id="distributed-egress">Distributed Egress</h1>
+
+<p>For this traffic flow we will focus on the Application VPC. Distributed egress is commonly used when there is a need to inspect traffic for a VPC that has an attached IGW and resources with a public Elastic IP (EIP) or that are behind a NAT GW. The benefit of this design is that traffic does not need to traverse additional AWS networking components for inspection so each VPC is isolated from others. The caveat to consider is that each VPC would need a directly attached IGW and resources such as NAT GWs that have additional cost.</p>
+
+<p><img src="../images/image-dist-egress-diag1.png" alt="" /></p>
+
+<p><strong>Step 1:</strong> An outbound connection starts with a private EC2 instance initiating a connection to a public resource. The first packet (ie TCP SYN) will be routed to the intrinsic router which will route traffic to the NAT GW in the same AZ, as configured in the assigned VPC route table. The EC2 instance has a default route, received via DHCP, that points to the first host IP in the subnet which is the intrinsic router.</p>
+
+<p><strong>Step 2:</strong> The traffic is received at the NAT GW ENI which then routes the traffic to the associated GWLBe endpoint in the same AZ, as configured in the assigned VPC route table.</p>
+
+
+<div class="notices note" ><p>The NAT GW will source NAT the traffic to the private IP assigned to its ENI.</p>
+</div>
+
+
+<p><strong>Step 3:</strong>  The traffic is received at the GWLBe endpoint which then routes the traffic to the associated GWLB ENI in the same AZ in the managed Fortinet AWS account/VPC. This is done behind the scene using AWS Private Link.</p>
+
+<p><strong>Step 4:</strong> The traffic is received at the GWLB ENI and is then encapsulated in a GENEVE tunnel and routed to one of the instances in the FortiGate CNF auto scale group for traffic inspection. Post inspection, if the traffic is allowed, the instance will hairpin the traffic back to the same GWLB ENI over GENEVE. Then the GWLB ENI will hairpin the traffic back to the same GWLBe endpoint.</p>
+
+<p><strong>Step 5:</strong> The GWLBe endpoint will then route the inspected traffic to the intrinsic router. The intrinsic router will route traffic directly to the IGW as specified in the VPC route table assigned to the subnet.</p>
+
+
+<div class="notices note" ><p>The IGW will source NAT the traffic to the public EIP assigned to the NAT GW ENI.</p>
+</div>
+
+
+<p><strong>Step 6:</strong> The destination will receive the traffic and respond. The return traffic will be intercepted at the IGW and routed to the GWLBe endpoint. Then the return traffic follow these steps in reverse.</p>
+
+<ul>
+<li>1.  To test out this flow navigate to the <strong>AWS EC2 console and go to Instances &gt; Instances</strong>. Then select either <strong>AppInstance</strong> and click Connect &gt; EC2 serial console. Copy the instance ID as this will be the username and click connect.</li>
+</ul>
+
+<p><img src="../images/image-t5-3.png" alt="" /></p>
+
+<p><img src="../images/image-t5-4.png" alt="" /></p>
+
+<ul>
+<li>2.  Login to the instance with the instance ID as the username and <strong>Fortinet123!</strong> as the password. Then run the commands below to test traffic:</li>
+</ul>
+
+<p><code>ping 8.8.8.8</code></p>
+
+<p><code>curl http://ipinfo.io</code></p>
+
+<p><code>curl https://ipinfo.io</code></p>
+
+
+<div class="notices info" ><p>You are now only allowing HTTPS outbound to one FQDN and ICMP to any public IP within the United States!</p>
+</div>
+
+
+<p><img src="../images/image-t5-5.png" alt="" /></p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+            </div> 
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/4_modulefour/41_distributedingress.html" title="Distributed Ingress"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/4_modulefour/43_centralizedegress.html" title="Centralized Egress" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1675961207"></script>
+    <script src="/js/perfect-scrollbar.min.js?1675961207"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1675961207"></script>
+    <script src="/js/jquery.sticky.js?1675961207"></script>
+    <script src="/js/featherlight.min.js?1675961207"></script>
+    <script src="/js/highlight.pack.js?1675961207"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1675961207"></script>
+    <script src="/js/learn.js?1675961207"></script>
+    <script src="/js/hugo-learn.js?1675961207"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1675961207"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

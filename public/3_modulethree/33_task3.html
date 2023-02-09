@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.86.0" />
+    <meta name="description" content="FortiGate CNF Workshop">
+<meta name="author" content="Hiruy Aberra">
+
+    <link rel="icon" href="https://awsmedia.s3.amazonaws.com/favicon.ico" type="image/x-icon" />
+
+    <title>Task 3: Deploying CNF Instances and GWLBe endpoints :: English</title>
+
+    
+    <link href="/css/nucleus.css?1675961207" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1675961207" rel="stylesheet">
+    <link href="/css/hybrid.css?1675961207" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1675961207" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1675961207" rel="stylesheet">
+    <link href="/css/auto-complete.css?1675961207" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1675961207" rel="stylesheet">
+    <link href="/css/theme.css?1675961207" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1675961207" rel="stylesheet">
+    
+    <link href="/css/theme-mine.css?1675961207" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1675961207"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/3_modulethree/33_task3.html">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" title="Go home"><img style="vertical-align:middle;margin:30px;" src="../../images/AWS-Logo_White-Color.png" height="125px">
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1675961207"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1675961207"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1675961207"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1_moduleone.html" title="Introduction" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1_moduleone.html">
+          Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2_moduletwo.html" title="Workshop Prerequisites" class="dd-item
+        
+        
+        
+        ">
+      <a href="/2_moduletwo.html">
+          Workshop Prerequisites
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_moduletwo/21_logistics.html" title="Workshop Logistics" class="dd-item ">
+        <a href="/2_moduletwo/21_logistics.html">
+        Workshop Logistics
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_moduletwo/22_awsnetworkingconcepts.html" title="AWS Networking Concepts" class="dd-item ">
+        <a href="/2_moduletwo/22_awsnetworkingconcepts.html">
+        AWS Networking Concepts
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_moduletwo/23_awscommonarchitecturepatterns.html" title="AWS Common Architecture Patterns" class="dd-item ">
+        <a href="/2_moduletwo/23_awscommonarchitecturepatterns.html">
+        AWS Common Architecture Patterns
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_moduletwo/24_fortigatecnfterminology.html" title="FortiGate CNF Terminology" class="dd-item ">
+        <a href="/2_moduletwo/24_fortigatecnfterminology.html">
+        FortiGate CNF Terminology
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3_modulethree.html" title="Workshop Hands On" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/3_modulethree.html">
+          Workshop Hands On
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/3_modulethree/31_task1.html" title="Task 1: Subscribe to FortiGate CNF in AWS Marketplace" class="dd-item ">
+        <a href="/3_modulethree/31_task1.html">
+        Task 1: Subscribe to FortiGate CNF in AWS Marketplace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/3_modulethree/32_task2.html" title="Task 2: Onboard an AWS account to FortiGate CNF" class="dd-item ">
+        <a href="/3_modulethree/32_task2.html">
+        Task 2: Onboard an AWS account to FortiGate CNF
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/3_modulethree/33_task3.html" title="Task 3: Deploying CNF Instances and GWLBe endpoints" class="dd-item active">
+        <a href="/3_modulethree/33_task3.html">
+        Task 3: Deploying CNF Instances and GWLBe endpoints
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/3_modulethree/34_task4.html" title="Task 4: Create a policy set and apply it to a FortiGate CNF Instance" class="dd-item ">
+        <a href="/3_modulethree/34_task4.html">
+        Task 4: Create a policy set and apply it to a FortiGate CNF Instance
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4_modulefour.html" title="Workshop Test Traffic" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4_modulefour.html">
+          Workshop Test Traffic
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_modulefour/41_distributedingress.html" title="Distributed Ingress" class="dd-item ">
+        <a href="/4_modulefour/41_distributedingress.html">
+        Distributed Ingress
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_modulefour/42_distributedegress.html" title="Distributed Egress" class="dd-item ">
+        <a href="/4_modulefour/42_distributedegress.html">
+        Distributed Egress
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_modulefour/43_centralizedegress.html" title="Centralized Egress" class="dd-item ">
+        <a href="/4_modulefour/43_centralizedegress.html">
+        Centralized Egress
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_modulefour/44_centralizedeastwest.html" title="Centralized East West" class="dd-item ">
+        <a href="/4_modulefour/44_centralizedeastwest.html">
+        Centralized East West
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5_modulefive.html" title="Providing Feedback" class="dd-item
+        
+        
+        
+        ">
+      <a href="/5_modulefive.html">
+          Providing Feedback
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://fortinet.com/aws"><i class='far fa-lightbulb'></i> Fortinet's AWS Microsite</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://aws.amazon.com/marketplace/search/results?searchTerms=fortinet"><i class='fas fa-tools'></i> AWS MP Listings for Fortinet</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://docs.fortinet.com/cloud-solutions/aws"><i class='far fa-lightbulb'></i> Fortinet in AWS Docs</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://docs.fortinet.com/product/fortigate-cnf"><i class='fas fa-chalkboard-teacher'></i> FortiGate CNF Docs</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+
+    <a href="https://aws.amazon.com/privacy/?nc1=f_pr">Privacy</a> | <a
+        href="https://aws.amazon.com/terms/?nc1=f_pr">Site Terms</a> | <a
+        href="https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/license/cc-license.html">CC BY-SA 4.0</a>
+
+</left>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Secure AWS workloads with FortiGate CNF SaaS</a> > <a href='/3_modulethree.html'>Workshop Hands On</a> > Task 3: Deploying CNF Instances and GWLBe endpoints
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+
+
+<h1 id="task-3-deploying-cnf-instances-and-gwlbe-endpoints">Task 3: Deploying CNF Instances and GWLBe endpoints</h1>
+
+<ul>
+<li>1.  In the FortiGate CNF console, navigate to CNF instances and click <strong>New</strong>.</li>
+</ul>
+
+<p><img src="../images/image-t3-1.png" alt="" /></p>
+
+<ul>
+<li>2.  Provide a name for the CNF instance, select <strong>us-east-2</strong> for the region for deployment, select <strong>Internal S3</strong> for the log type, and select the <strong>S3 bucket</strong> created by CloudFormation for the logging destination. Then click <strong>Save</strong>. This will drop you back to the list of CNF instances while this is deployed in the background.</li>
+</ul>
+
+
+<div class="notices note" ><p><strong>Note:</strong> FortiGate CNF is available in the following regions today.  Based on customer demand, more regions will be supported in the future.</p>
+</div>
+
+
+<ul>
+<li>us-east-1 (N. Virginia)</li>
+<li>us-east-2 (Ohio)</li>
+<li>us-west-1 (N. California)</li>
+<li>us-west-1 (Oregon)</li>
+<li>eu-central-1 (Frankfurt)</li>
+<li>eu-west-1 (Ireland)</li>
+<li>ap-northeast-1 (Tokyo)</li>
+</ul>
+
+<p><img src="../images/image-t3-2.png" alt="" /></p>
+
+<p><img src="../images/image-t3-3.png" alt="" /></p>
+
+<ul>
+<li>3.  The CNF Instance should show up as <strong>active after roughly 10 minutes</strong> (Now is a great time for a break :) ). Then you can <strong>select and edit</strong> it to deploy endpoints and assign a policy set.</li>
+</ul>
+
+<p><img src="../images/image-t3-4.png" alt="" /></p>
+
+<p><img src="../images/image-t3-5.png" alt="" /></p>
+
+<ul>
+<li>4.  On the Configure Endpoints section of the wizard, click the <strong>New</strong> button. Then you can select the account, VPC, then toggle the <strong>Select from all subnets to off</strong> (this filters the subnets to only show ones that are properly tagged), and the subnet to deploy the VPC endpoint to. Repeat this step for all subnets in the table below, then click the <strong>Next</strong> button.  Once all have been created, click *<em>Next</em>.</li>
+</ul>
+
+
+<div class="notices info" ><p><strong>Note:</strong> In order for FortiGate CNF to successfully create a GWLBe in a subnet, <strong>the subnet must be properly tagged</strong>.  The subnet needs a Tag <strong><em>Name = fortigatecnf_subnet_type</em></strong> and Tag <strong><em>Value = endpoint</em></strong>. Otherwise you will see an error that the subnet ID is invalid.  The subnets below have already been tagged properly.</p>
+</div>
+
+
+<table>
+<thead>
+<tr>
+<th>VPC</th>
+<th>Subnet</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Application-VPC</td>
+<td>Application-GwlbeSubnet1</td>
+</tr>
+
+<tr>
+<td>Application-VPC</td>
+<td>Application-GwlbeSubnet2</td>
+</tr>
+
+<tr>
+<td>Inspection-VPC</td>
+<td>Inspection-GwlbeSubnet1</td>
+</tr>
+
+<tr>
+<td>Inspection-VPC</td>
+<td>Inspection-GwlbeSubnet2</td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="../images/image-t3-6.png" alt="" /></p>
+
+<p><img src="../images/image-t3-7.png" alt="" /></p>
+
+<p><img src="../images/image-t3-8.png" alt="" /></p>
+
+<ul>
+<li>5.  On the Configure Policy Set section of the wizard, use the default &lsquo;allow_all&rsquo; policy to allow all traffic from a Layer 4 perspective and click <strong>Finalize</strong> to push that default policy. You should then see the list of CNF instances again.</li>
+</ul>
+
+<p><img src="../images/image-t3-9.png" alt="" /></p>
+
+<p><img src="../images/image-t3-10.png" alt="" /></p>
+
+<ul>
+<li>6.  To validate all GWLBe endpoints have been deployed and are active (takes ~5 mins), <strong>select and edit</strong> the CNF instance and click <strong>Next</strong> to view the GWLBe endpoints on the Configure Endpoints section of the wizard. Then click <strong>Exit</strong> to leave the CNF configuration wizard.</li>
+</ul>
+
+<p><img src="../images/image-t3-11.png" alt="" /></p>
+
+<ul>
+<li>7.  Log into your AWS Account and navigate to the <strong>VPC Console &gt; Endpoints</strong>.  Each of the GWLBe endpoints you deployed in the FortiGate CNF Console should be visible in your account.  Notice the tag name and value pairs assigned to the endpoints.</li>
+</ul>
+
+<p><img src="../images/image-t3-12.png" alt="" /></p>
+
+
+<div class="notices info" ><p><strong>Note:</strong> At this point in a normal environment, you would need to create ingress and VPC routes to direct traffic to the GWLBe endpoints that were created by FortiGate CNF for inspection.  However, for this workshop there is a Lambda function that is creating these routes for you to match the AWS Reference Architecture Diagram.</p>
+</div>
+
+
+<ul>
+<li>9.  To validate that the relevant VPC routes have been automatically created to route traffic to the GWLBe endpoints, in the AWS VPC console, <strong>navigate to Virtual Private Cloud &gt; Route Tables</strong>, select each of the route tables listed below and confirm these routes exist in the route tab of the route table details pane.</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>VPC Route Table</th>
+<th># Routes to GLWBe</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Application-IgwRouteTable</td>
+<td>2x (one per public subnet), one per GWLBe (each AZ)</td>
+</tr>
+
+<tr>
+<td>Application-Public1RouteTable</td>
+<td>1x (default route), GWLBe AZ1</td>
+</tr>
+
+<tr>
+<td>Application-Public2RouteTable</td>
+<td>1x (default route), GWLBe AZ2</td>
+</tr>
+
+<tr>
+<td>Inspection-Public1RouteTable</td>
+<td>1x (10.0.0.0/8 route), GWLBe AZ1</td>
+</tr>
+
+<tr>
+<td>Inspection-Public2RouteTable</td>
+<td>1x (10.0.0.0/8 route), GWLBe AZ2</td>
+</tr>
+
+<tr>
+<td>Inspection-TgwAttach1RouteTable</td>
+<td>1x (default route), GWLBe AZ1</td>
+</tr>
+
+<tr>
+<td>Inspection-TgwAttach2RouteTable</td>
+<td>1x (default route), GWLBe AZ2</td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="../images/image-t3-13.png" alt="" /></p>
+
+<ul>
+<li>10.  To confirm that app1 in the Application VPC is reachable, in the AWS CloudFormation console, <strong>toggle the view nested button to off</strong> &gt; then select the stack name &gt; and on the details pane select the outputs tab.  You should see the output for <strong>URLforApp1</strong>.  Click on the value for that output to check that App1 is reachable now.  You should see a simple webpage with some metadata about the backend web server instance that is reachable via the public Network Load Balancer (NLB).</li>
+</ul>
+
+<p><img src="../images/image-t3-14.png" alt="" /></p>
+
+<p><img src="../images/image-t3-15.png" alt="" /></p>
+
+<ul>
+<li>11.  This concludes this section.</li>
+</ul>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+            </div> 
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/3_modulethree/32_task2.html" title="Task 2: Onboard an AWS account to FortiGate CNF"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/3_modulethree/34_task4.html" title="Task 4: Create a policy set and apply it to a FortiGate CNF Instance" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1675961207"></script>
+    <script src="/js/perfect-scrollbar.min.js?1675961207"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1675961207"></script>
+    <script src="/js/jquery.sticky.js?1675961207"></script>
+    <script src="/js/featherlight.min.js?1675961207"></script>
+    <script src="/js/highlight.pack.js?1675961207"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1675961207"></script>
+    <script src="/js/learn.js?1675961207"></script>
+    <script src="/js/hugo-learn.js?1675961207"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1675961207"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+
