@@ -5,9 +5,8 @@ weight: 1
 ---
 
 # Secure AWS workloads with FortiGate CNF SaaS
-<br>
+
 ![](./images/image-cnf-overview.png)
-<br>
 
 ## Welcome!
 
