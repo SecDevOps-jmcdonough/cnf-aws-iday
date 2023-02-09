@@ -6,4 +6,4 @@ weight: 3
 
 # Workshop Hands On
 
-![](../images/image-getready.jpg)
+![](./images/image-getready.jpg)
