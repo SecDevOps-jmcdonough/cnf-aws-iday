@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Providing Feedback on English</title>
-    <link>/5_modulefive.html</link>
+    <link>https://fortinetsecdevops.github.io/cnf-aws-iday/5_modulefive.html</link>
     <description>Recent content in Providing Feedback on English</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="/5_modulefive/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="https://fortinetsecdevops.github.io/cnf-aws-iday/5_modulefive/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -4,7 +4,20 @@ chapter: true
 weight: 1
 ---
 
-# Introduction
+# Secure AWS workloads with FortiGate CNF SaaS
+<br>
+![](./images/image-cnf-overview.png)
+<br>
+
+## Welcome!
+
+AWS Software-Defined Networking (SDN) is elastic, complex, and quite different than traditional on-premise networking. In this workshop you will learn how to use FortiGate Cloud Native Firewall as a Service (FortiGate CNF) to protect your AWS workloads deployed in common architecture patterns.
+
+This workshop is intended to help accomplish the following:
+
+  * Learn common AWS networking concepts such as routing traffic in and out of VPCs for various traffic flows
+  * Interact with FortiGate CNF Portal to deploy CNF instances, build security policy sets, and deploy them
+  * Test traffic flows in an example environment and use FortiGate CNF to control traffic flows
 
 ## Learning Objectives
 
@@ -42,4 +55,4 @@ This is the architecture and environment that will be used in the workshop.
   * **Distributed Ingress + Egress**
   * **Centralized Egress + East-West**
 
-![](images/image-ref-diag1.png)
+![](./images/image-ref-diag1.png)

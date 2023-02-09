@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Workshop Hands On on English</title>
-    <link>/3_modulethree.html</link>
+    <link>https://fortinetsecdevops.github.io/cnf-aws-iday/3_modulethree.html</link>
     <description>Recent content in Workshop Hands On on English</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="/3_modulethree/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="https://fortinetsecdevops.github.io/cnf-aws-iday/3_modulethree/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Task 1: Subscribe to FortiGate CNF in AWS Marketplace</title>
-      <link>/3_modulethree/31_task1.html</link>
+      <link>https://fortinetsecdevops.github.io/cnf-aws-iday/3_modulethree/31_task1.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_modulethree/31_task1.html</guid>
-      <description>Task 1: Subscribe to FortiGate CNF in AWS Marketplace  1. Log into your AWS account and navigate to the AWS Marketplace listing for FortiGate CNF. In the upper right corner, click View purchase options. On the next page, click Subscribe.   2. In the available offers list, select the Public offer.   3. The page should update and show the GA pricing. Click Subscribe.   4.</description>
+      <guid>https://fortinetsecdevops.github.io/cnf-aws-iday/3_modulethree/31_task1.html</guid>
+      <description>Task 1: Subscribe to FortiGate CNF in AWS Marketplace    Log into your AWS account and navigate to the AWS Marketplace listing for FortiGate CNF. In the upper right corner, click View purchase options. On the next page, click Subscribe.      In the available offers list, select the Public offer.      The page should update and show the GA pricing. Click Subscribe.</description>
     </item>
     
     <item>
       <title>Task 2: Onboard an AWS account to FortiGate CNF</title>
-      <link>/3_modulethree/32_task2.html</link>
+      <link>https://fortinetsecdevops.github.io/cnf-aws-iday/3_modulethree/32_task2.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_modulethree/32_task2.html</guid>
-      <description>Task 2: Onboard an AWS account to FortiGate CNF  1. In the FortiGate CNF Console, navigate to AWS Accounts, then click New to start the add account wizard.   2. In a new browser tab, log into your AWS account and click on your IAM user name in the upper right corner. This will allow you to see and copy your AWS account ID.   3. In the FortiGate CNF Console, provide your AWS account ID and select Launch CloudFormation Template.</description>
+      <guid>https://fortinetsecdevops.github.io/cnf-aws-iday/3_modulethree/32_task2.html</guid>
+      <description>Task 2: Onboard an AWS account to FortiGate CNF    In the FortiGate CNF Console, navigate to AWS Accounts, then click New to start the add account wizard.      In a new browser tab, log into your AWS account and click on your IAM user name in the upper right corner. This will allow you to see and copy your AWS account ID.      In the FortiGate CNF Console, provide your AWS account ID and select Launch CloudFormation Template.</description>
     </item>
     
     <item>
       <title>Task 3: Deploying CNF Instances and GWLBe endpoints</title>
-      <link>/3_modulethree/33_task3.html</link>
+      <link>https://fortinetsecdevops.github.io/cnf-aws-iday/3_modulethree/33_task3.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_modulethree/33_task3.html</guid>
-      <description>Task 3: Deploying CNF Instances and GWLBe endpoints  1. In the FortiGate CNF console, navigate to CNF instances and click New.   2. Provide a name for the CNF instance, select us-east-2 for the region for deployment, select Internal S3 for the log type, and select the S3 bucket created by CloudFormation for the logging destination. Then click Save. This will drop you back to the list of CNF instances while this is deployed in the background.</description>
+      <guid>https://fortinetsecdevops.github.io/cnf-aws-iday/3_modulethree/33_task3.html</guid>
+      <description>Task 3: Deploying CNF Instances and GWLBe endpoints    In the FortiGate CNF console, navigate to CNF instances and click New.      Provide a name for the CNF instance, select us-east-2 for the region for deployment, select Internal S3 for the log type, and select the S3 bucket created by CloudFormation for the logging destination. Then click Save. This will drop you back to the list of CNF instances while this is deployed in the background.</description>
     </item>
     
     <item>
       <title>Task 4: Create a policy set and apply it to a FortiGate CNF Instance</title>
-      <link>/3_modulethree/34_task4.html</link>
+      <link>https://fortinetsecdevops.github.io/cnf-aws-iday/3_modulethree/34_task4.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_modulethree/34_task4.html</guid>
-      <description>Task 4: Create a policy set and apply it to a FortiGate CNF Instance  1. At this point, we are using the default allow_all policy set which allows all communication to be allowed without any restriction from a Layer 4 and Layer 7 perspective.   2. To customize the actual L4 rules and L7 security profile groups applied, in the FortiGate CNF Console navigate to Policy &amp;amp; Objects &amp;gt; Policy Sets to create your own policy set.</description>
+      <guid>https://fortinetsecdevops.github.io/cnf-aws-iday/3_modulethree/34_task4.html</guid>
+      <description>Task 4: Create a policy set and apply it to a FortiGate CNF Instance    At this point, we are using the default allow_all policy set which allows all communication to be allowed without any restriction from a Layer 4 and Layer 7 perspective.      To customize the actual L4 rules and L7 security profile groups applied, in the FortiGate CNF Console navigate to Policy &amp;amp; Objects &amp;gt; Policy Sets to create your own policy set.</description>
     </item>
     
   </channel>

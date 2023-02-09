@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://fortinetsecdevops.github.io/cnf-aws-iday/"
 languageCode = "en-US"
 defaultContentLanguage = "en" # Modify to change the default language/version of the site
 
@@ -38,7 +38,7 @@ enableEmoji = true
   # Order sections in menu by "weight" or "title". Default to "weight"
   ordersectionsby = "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant = "mine"
+  themeVariant = "red"
 
 
 [outputs]
