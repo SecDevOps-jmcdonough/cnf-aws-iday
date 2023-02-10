@@ -25,11 +25,11 @@ weight: 2
 
 - 4.  This CloudFormation Template creates the following items:
 
-A. S3 bucket for sending logs
+	- 1. S3 bucket for sending logs
 
-B. IAM Cross Account Role which allows us to manage GWLBe endpoints, describe VPCs, push logs to S3, and describe instances and EKS clusters for the SDN connector feature (dynamic address objects based on metadata).
+	- 2. IAM Cross Account Role which allows us to manage GWLBe endpoints, describe VPCs, push logs to S3, and describe instances and EKS clusters for the SDN connector feature (dynamic address objects based on metadata).
 
-C. Custom resources which kicks off automation on our managed accounts to complete backend tasks for onboarding the AWS account.
+	- 3. Custom resources which kicks off automation on our managed accounts to complete backend tasks for onboarding the AWS account.
 
 - 5.  Please follow through the create stack wizard **without changing the region or any of the parameter values**. Simply follow the steps outlined in the FortiGate CNF Console and click through the CloudFormation wizard.
 

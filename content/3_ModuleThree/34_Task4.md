@@ -15,7 +15,7 @@ weight: 4
 
 ![](../images/image-t4-2.png)
 
-- 3.  Before adding in L4 rules within the policy set, create a few simple address objects.  **Navigate to Policy & Objects > Addresses*, click New, and Address. Then create each of the address objects below.
+- 3.  Before adding in L4 rules within the policy set, create a few simple address objects.  **Navigate to Policy & Objects > Addresses**, click New, and Address. Then create each of the address objects below.
 
 Name | Type | IP/Netmask Value
 ---|---|---

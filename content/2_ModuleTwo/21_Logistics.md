@@ -9,14 +9,14 @@ weight: 1
 
 ## Accessing an AWS environment
 
-For the AWS Immersion Days, we will provide you the following via email:
+For the AWS Immersion Days, we will provide you the following via email on the day of the event:
 
   * **AWS sign in link**
   * **IAM User w/ console access**
   * **Password for the IAM User**
 
 {{% notice note %}}
-If you are wanting to run through this in your own environment for training purposes, use the [**master CFT**](https://hacorp-us-east-1.s3.amazonaws.com/forticnf-aws-workshop-cloudformation/Master_CNF_DualAZ.template.json) to deploy the base environment.
+If you are wanting to run through this in your own environment for training purposes, use the Master CFT to deploy the base environment: [**https://hacorp-us-east-1.s3.amazonaws.com/forticnf-aws-workshop-cloudformation/Master_CNF_DualAZ.template.json**](https://hacorp-us-east-1.s3.amazonaws.com/forticnf-aws-workshop-cloudformation/Master_CNF_DualAZ.template.json)
 {{% /notice %}}
 
 ## Accessing the FortiGate CNF Console

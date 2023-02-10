@@ -37,16 +37,16 @@ weight: 3
 
 - 4.  On the Configure Endpoints section of the wizard, click the **New** button. Then you can select the account, VPC, then toggle the **Select from all subnets to off** (this filters the subnets to only show ones that are properly tagged), and the subnet to deploy the VPC endpoint to. Repeat this step for all subnets in the table below, then click the **Next** button.  Once all have been created, click **Next*.
 
-{{% notice info %}}
-**Note:** In order for FortiGate CNF to successfully create a GWLBe in a subnet, **the subnet must be properly tagged**.  The subnet needs a Tag ***Name = fortigatecnf_subnet_type*** and Tag ***Value = endpoint***. Otherwise you will see an error that the subnet ID is invalid.  The subnets below have already been tagged properly.
-{{% /notice %}}
-
 VPC | Subnet
 ---|---
 Application-VPC | Application-GwlbeSubnet1
 Application-VPC | Application-GwlbeSubnet2
 Inspection-VPC | Inspection-GwlbeSubnet1
 Inspection-VPC | Inspection-GwlbeSubnet2
+
+{{% notice info %}}
+**Note:** In order for FortiGate CNF to successfully create a GWLBe in a subnet, **the subnet must be properly tagged**.  The subnet needs a Tag ***Name = fortigatecnf_subnet_type*** and Tag ***Value = endpoint***. Otherwise you will see an error that the subnet ID is invalid.  The subnets below have already been tagged properly. **In this example environment, the subnets above have already been properly tagged.**
+{{% /notice %}}
 
 ![](../images/image-t3-6.png)
 
