@@ -20,7 +20,7 @@ weight: 3
   * us-east-1 (N. Virginia)
   * us-east-2 (Ohio)
   * us-west-1 (N. California)
-  * us-west-1 (Oregon)
+  * us-west-2 (Oregon)
   * eu-central-1 (Frankfurt)
   * eu-west-1 (Ireland)
   * ap-northeast-1 (Tokyo)

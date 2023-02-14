@@ -108,7 +108,7 @@ BlockList-Inbound | Russia | all | ALL | DENY | All Sessions
 BlockList-Outbound | all | Russia | ALL | DENY | All Sessions
 HTTPS-Inbound | UnitedStates | RFC-1918 | HTTPS | ACCEPT | All Sessions
 ICMP-EastWest | RFC-1918 | RFC-1918 | ALL_ICMP | ACCEPT | All Sessions
-AuthSharedServices-EastWest | ProdAPIBackend | ProdAuthBackend | HTTPS + RADIUS ACCEPT All Sessions
+AuthSharedServices-EastWest | ProdAPIBackend | ProdAuthBackend | HTTPS + RADIUS | ACCEPT | All Sessions
 ICMP-Egress | RFC-1918 | UnitedStates | ALL_ICMP | ACCEPT | All Sessions
 IPinfo-Egress | SDNGroup1 + SDNGroup2 + AppPublicSubnet1 + AppPublicSubnet2 | ipinfo.io | HTTPS | ACCEPT | All Sessions
 
