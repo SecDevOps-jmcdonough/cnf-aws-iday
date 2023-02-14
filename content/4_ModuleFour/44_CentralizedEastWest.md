@@ -33,7 +33,7 @@ For this traffic flow we will focus on the Shared Services, Workload, and Inspec
 
 ![](../images/image-t5-10.png)
 
-- 2.  Login to the instance with the instance ID as the username and **Fortinet123!** as the password. Then run the commands below to test traffic:
+- 2.  Login to the instance with the instance ID as the username and **FORTInet123!** as the password. Then run the commands below to test traffic:
 
 `ping 10.1.2.10`
 
