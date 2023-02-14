@@ -19,6 +19,7 @@ For the AWS Immersion Days, we will provide you the following via email on the d
 If you are wanting to run through this in your own environment for training purposes, use the Master CFT to deploy the base environment: [**https://hacorp-us-east-1.s3.amazonaws.com/forticnf-aws-workshop-cloudformation/Master_CNF_DualAZ.template.json**](https://hacorp-us-east-1.s3.amazonaws.com/forticnf-aws-workshop-cloudformation/Master_CNF_DualAZ.template.json)
 {{% /notice %}}
 
+
 ## Accessing the FortiGate CNF Console
 
 FortiGate CNF and other SaaS solutions are tied to your [**FortiCloud**](https://support.fortinet.com/). If you do not already have one, please navigate [**here**](https://support.fortinet.com/cred/#/sign-up) and complete the registration process.

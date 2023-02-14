@@ -30,8 +30,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fortinetsecdevops.github.io/cnf-aws-iday/2_moduletwo/21_logistics.html</guid>
-      <description>Workshop Logistics Accessing an AWS environment For the AWS Immersion Days, we will provide you the following via email:
- AWS sign in link IAM User w/ console access Password for the IAM User  If you are wanting to run through this in your own environment for training purposes, use the master CFT to deploy the base environment.
+      <description>Workshop Logistics Accessing an AWS environment For the AWS Immersion Days, we will provide you the following via email on the day of the event:
+ AWS sign in link IAM User w/ console access Password for the IAM User  If you are wanting to run through this in your own environment for training purposes, use the Master CFT to deploy the base environment: https://hacorp-us-east-1.s3.amazonaws.com/forticnf-aws-workshop-cloudformation/Master_CNF_DualAZ.template.json
  Accessing the FortiGate CNF Console FortiGate CNF and other SaaS solutions are tied to your FortiCloud.</description>
     </item>
     
