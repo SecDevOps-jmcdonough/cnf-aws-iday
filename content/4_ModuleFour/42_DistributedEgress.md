@@ -37,7 +37,7 @@ The IGW will source NAT the traffic to the public EIP assigned to the NAT GW ENI
 
 ![](../images/image-t5-4.png)
 
-- 2.  Login to the instance with the instance ID as the username and **FORTInet123!** as the password. Then run the commands below to test traffic:
+- 2.  Login to the instance with the instance ID as the username and **`FORTInet123!`** as the password. Then run the commands below to test traffic:
 
 `ping 8.8.8.8`
 
@@ -45,7 +45,7 @@ The IGW will source NAT the traffic to the public EIP assigned to the NAT GW ENI
 
 `curl https://ipinfo.io`
 
-{{% notice info %}}
+{{% notice note %}}
 You are now only allowing HTTPS outbound to one FQDN and ICMP to any public IP within the United States!
 {{% /notice %}}
 

@@ -33,7 +33,7 @@ The NLB will perform destination NAT to change the private IP to that of the hea
 
 - 1.  To test out this flow navigate to the AWS CloudFormation console and **toggle the view nested button to off** > then select the stack name > and on the details pane select the outputs tab. You should see the output for **URLforApp1**. Click on the value for that output to check that App1 is no longer reachable now. Click on the value for the output **EncryptedURLforApp1** and you will see the self-signed certificate warning. Once you accept the warning, you will see the test web page.
 
-{{% notice info %}}
+{{% notice note %}}
 You are now only allowing HTTPS inbound to your environment that is sourced from a public IP within the United States!
 {{% /notice %}}
 

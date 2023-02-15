@@ -39,7 +39,7 @@ The IGW will source NAT the traffic to the public EIP assigned to the NAT GW ENI
 
 ![](../images/image-t5-7.png)
 
-- 2.  Login to the instance with the instance ID as the username and **FORTInet123!** as the password. Then run the commands below to test traffic:
+- 2.  Login to the instance with the instance ID as the username and **`FORTInet123!`** as the password. Then run the commands below to test traffic:
 
 `ping 8.8.8.8`
 
