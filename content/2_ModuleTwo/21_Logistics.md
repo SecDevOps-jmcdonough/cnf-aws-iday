@@ -16,7 +16,7 @@ For the AWS Immersion Days, we will provide you the following via email on the d
   * **Password for the IAM User**
 
 {{% notice note %}}
-**We recommend using our pre provisioned AWS accounts** for the workshop as this provides the fastest hands on experience, **without worrying about charges incurred on your AWS bill**.
+**We recommend using our pre provisioned AWS accounts** for the workshop as this **provides the fastest hands on experience, without worrying about charges incurred on your AWS bill**.
 {{% /notice %}}
 
 {{% notice warning %}}
