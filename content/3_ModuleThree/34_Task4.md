@@ -11,11 +11,11 @@ weight: 4
 
 ![](../images/image-t4-1.png)
 
-- 2.  To customize the actual L4 rules and L7 security profile groups applied, in the FortiGate CNF Console **navigate to Policy & Objects > Policy Sets** to create your own policy set.  Simply **click Create New**, select **Policy Set**, and give your policy set a name.
+- 2.  To customize the actual L4 rules and L7 security profile groups applied, in the FortiGate CNF Console **navigate to Policy & Objects > Policy Sets** to create your own policy set. Simply **click Create New**, select **Policy Set**, and give your policy set a name.
 
 ![](../images/image-t4-2.png)
 
-- 3.  Before adding in L4 rules within the policy set, create a few simple address objects.  **Navigate to Policy & Objects > Addresses**, click New, and Address. Then create each of the address objects below.
+- 3.  Before adding in L4 rules within the policy set, create a few simple address objects. **Navigate to Policy & Objects > Addresses**, click New, and Address. Then create each of the address objects below.
 
 Name | Type | IP/Netmask Value
 ---|---|---
@@ -56,7 +56,7 @@ ipinfo.io | FQDN | ipinfo.io
 - 6. Geography based address objects are available in FortiGate CNF. This allows controlling traffic based on public IPs assigned to countries around the globe. These objects can be used as a source or destination object within policies used in a policy set. Create a geo based address object by **clicking New, and Address**. Select Geography for Type, then create the address objects below.
 
 {{% notice tip %}}
-**Note:** The IP for the country or region is automatically determined from the Geography IP database which is provided by FortiGuard Servers on a recurring basis.  For more granular control to applications (especially external), it is recommended to use URL or DNS filtering and even Application Control for L7 inspection.
+**Note:** The IP for the country or region is automatically determined from the Geography IP database which is provided by FortiGuard Servers on a recurring basis. For more granular control to applications (especially external), it is recommended to use URL or DNS filtering and even Application Control for L7 inspection.
 {{% /notice %}}
 
 Name | Type | Country/Region Value
@@ -92,7 +92,7 @@ SDNGroup3 | Private | Tag.sdn-group=group3
 
 ![](../images/image-t4-10.png)
 
-- 8.  Now you will create a policy set to enforce L4 rules using the address objects you just created in the previous steps.  **Navigate to Policy & Objects > Policy Sets** and click New, Policy Set. Give it a name and click Ok. You will be returned to the list of policy sets. **Select your policy set and click Edit**. 
+- 8.  Now you will create a policy set to enforce L4 rules using the address objects you just created in the previous steps. **Navigate to Policy & Objects > Policy Sets** and click New, Policy Set. Give it a name and click Ok. You will be returned to the list of policy sets. **Select your policy set and click Edit**. 
 
 ![](../images/image-t4-11.png)
 

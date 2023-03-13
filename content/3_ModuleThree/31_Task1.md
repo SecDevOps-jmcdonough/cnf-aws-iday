@@ -15,7 +15,7 @@ weight: 1
 
 ![](../images/image-t1-2.png)
 
-- 3.  The page should update and show the GA pricing.  Click **Subscribe**.
+- 3.  The page should update and show the GA pricing. Click **Subscribe**.
 
 ![](../images/image-t1-3.png)
 

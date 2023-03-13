@@ -15,7 +15,7 @@ For this traffic flow we will focus on the Shared Services, Workload, and Inspec
 
 **Step 2:** The traffic is received at the TGW ENI which then routes the traffic to the Inspection VPC TGW attachment, as configured in the associated Spoke VPC TGW route table.
 
-**Step 3:**  The traffic is received at the TGW ENI in the Inspection VPC which then routes the traffic to the GWLBe endpoint in the same AZ, as configured in the associated VPC route table.
+**Step 3:** The traffic is received at the TGW ENI in the Inspection VPC which then routes the traffic to the GWLBe endpoint in the same AZ, as configured in the associated VPC route table.
 
 **Step 4:** The traffic is received at the GWLBe endpoint which then routes the traffic to the associated GWLB ENI in the same AZ in the managed Fortinet AWS account/VPC. This is done behind the scene using AWS Private Link.
 
@@ -50,7 +50,7 @@ You are able to ping but SS annd HTTPS time out.
 {{% /expand%}}
 
 {{%expand "Question 2: What tags are allowing this communication to match the dynamic address objects?" %}}
-For the ProdAPIBackend object, Tag.env=prod AND Tag.app-role=api AND Tag.app-tier=backend.  For the ProdAuthBackend object, Tag.env=prod AND Tag.app-role=auth AND Tag.app-tier=backend.
+For the ProdAPIBackend object, Tag.env=prod AND Tag.app-role=api AND Tag.app-tier=backend. For the ProdAuthBackend object, Tag.env=prod AND Tag.app-role=auth AND Tag.app-tier=backend.
 {{% /expand%}}
 
 ![](../images/image-t5-11.png)

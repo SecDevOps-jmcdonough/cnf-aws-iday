@@ -15,7 +15,7 @@ For this traffic flow we will focus on the Shared Services, Workload, and Inspec
 
 **Step 2:** The traffic is received at the TGW ENI which then routes the traffic to the Inspection VPC TGW attachment, as configured in the associated Spoke VPC TGW route table.
 
-**Step 3:**  The traffic is received at the TGW ENI in the Inspection VPC which then routes the traffic to the GWLBe endpoint in the same AZ, as configured in the associated VPC route table.
+**Step 3:** The traffic is received at the TGW ENI in the Inspection VPC which then routes the traffic to the GWLBe endpoint in the same AZ, as configured in the associated VPC route table.
 
 **Step 4:** The traffic is received at the GWLBe endpoint which then routes the traffic to the associated GWLB ENI in the same AZ in the managed Fortinet AWS account/VPC. This is done behind the scene using AWS Private Link.
 
@@ -56,7 +56,7 @@ You should be able to access the IPinfo.io site over HTTPS and ping any public I
 
 
 {{%expand "Question 2: What address objects are allowing this communication to work even though the sdn-group = group3 for this instance?"%}}
-AppPublicSubnet1 + AppPublicSubnet2.  Remember that Dynamic, FQDN, and standard address objects still resolve to IPs.  Since the Application-VPC and SharedServices-VPC share the same CIDR the data plane traffic will match on those Address objects.  
+AppPublicSubnet1 + AppPublicSubnet2. Remember that Dynamic, FQDN, and standard address objects still resolve to IPs. Since the Application-VPC and SharedServices-VPC share the same CIDR the data plane traffic will match on those Address objects.
 
 A solution to this would be to use multiple CNF Instances in a region or expand on your tagging strategy to make the objects be more specific while avoiding using broad subnet CIDR values in the same L4 rule.{{% /expand%}}
 

@@ -14,7 +14,7 @@ weight: 3
 - 2.  Provide a name for the CNF instance, select **us-east-2** for the region for deployment, select **Internal S3** for the log type, and select the **S3 bucket** created by CloudFormation for the logging destination. Then click **Save**. This will drop you back to the list of CNF instances while this is deployed in the background.
 
 {{% notice note %}}
-**Note:** FortiGate CNF is available in the following regions today.  Based on customer demand, more regions will be supported in the future.
+**Note:** FortiGate CNF is available in the following regions today. Based on customer demand, more regions will be supported in the future.
 {{% /notice %}}
 
   * us-east-1 (N. Virginia)
@@ -35,7 +35,7 @@ weight: 3
 
 ![](../images/image-t3-5.png)
 
-- 4.  On the Configure Endpoints section of the wizard, click the **New** button. Then you can select the account, VPC, then toggle the **Select from all subnets to off** (this filters the subnets to only show ones that are properly tagged), and the subnet to deploy the VPC endpoint to. Repeat this step for all subnets in the table below, then click the **Next** button.  Once all have been created, click **Next*.
+- 4.  On the Configure Endpoints section of the wizard, click the **New** button. Then you can select the account, VPC, then toggle the **Select from all subnets to off** (this filters the subnets to only show ones that are properly tagged), and the subnet to deploy the VPC endpoint to. Repeat this step for all subnets in the table below, then click the **Next** button. Once all have been created, click **Next**.
 
 VPC | Subnet
 ---|---
@@ -45,7 +45,7 @@ Inspection-VPC | Inspection-GwlbeSubnet1
 Inspection-VPC | Inspection-GwlbeSubnet2
 
 {{% notice info %}}
-**Note:** In order for FortiGate CNF to successfully create a GWLBe in a subnet, **the subnet must be properly tagged**.  The subnet needs a Tag ***Name = fortigatecnf_subnet_type*** and Tag ***Value = endpoint***. Otherwise you will see an error that the subnet ID is invalid.  The subnets below have already been tagged properly. **In this example environment, the subnets above have already been properly tagged.**
+**Note:** In order for FortiGate CNF to successfully create a GWLBe in a subnet, **the subnet must be properly tagged**. The subnet needs a Tag ***Name = fortigatecnf_subnet_type*** and Tag ***Value = endpoint***. Otherwise you will see an error that the subnet ID is invalid. The subnets below have already been tagged properly. **In this example environment, the subnets above have already been properly tagged.**
 {{% /notice %}}
 
 ![](../images/image-t3-6.png)
@@ -64,12 +64,12 @@ Inspection-VPC | Inspection-GwlbeSubnet2
 
 ![](../images/image-t3-11.png)
 
-- 7.  Log into your AWS Account and navigate to the **VPC Console > Endpoints**.  Each of the GWLBe endpoints you deployed in the FortiGate CNF Console should be visible in your account.  Notice the tag name and value pairs assigned to the endpoints.
+- 7.  Log into your AWS Account and navigate to the **VPC Console > Endpoints**. Each of the GWLBe endpoints you deployed in the FortiGate CNF Console should be visible in your account. Notice the tag name and value pairs assigned to the endpoints.
 
 ![](../images/image-t3-12.png)
 
 {{% notice info %}}
-**Note:** At this point in a normal environment, you would need to create ingress and VPC routes to direct traffic to the GWLBe endpoints that were created by FortiGate CNF for inspection.  However, for this workshop there is a Lambda function that is creating these routes for you to match the AWS Reference Architecture Diagram.
+**Note:** At this point in a normal environment, you would need to create ingress and VPC routes to direct traffic to the GWLBe endpoints that were created by FortiGate CNF for inspection. However, for this workshop there is a Lambda function that is creating these routes for you to match the AWS Reference Architecture Diagram.
 {{% /notice %}}
 
 - 9.  To validate that the relevant VPC routes have been automatically created to route traffic to the GWLBe endpoints, in the AWS VPC console, **navigate to Virtual Private Cloud > Route Tables**, select each of the route tables listed below and confirm these routes exist in the route tab of the route table details pane.
@@ -86,7 +86,7 @@ Inspection-TgwAttach2RouteTable | 1x (default route), GWLBe AZ2
 
 ![](../images/image-t3-13.png)
 
-- 10.  To confirm that app1 in the Application VPC is reachable, in the AWS CloudFormation console, **toggle the view nested button to off** > then select the stack name > and on the details pane select the outputs tab.  You should see the output for **URLforApp1**.  Click on the value for that output to check that App1 is reachable now.  You should see a simple webpage with some metadata about the backend web server instance that is reachable via the public Network Load Balancer (NLB).
+- 10.  To confirm that app1 in the Application VPC is reachable, in the AWS CloudFormation console, **toggle the view nested button to off** > then select the stack name > and on the details pane select the outputs tab. You should see the output for **URLforApp1**. Click on the value for that output to check that App1 is reachable now. You should see a simple webpage with some metadata about the backend web server instance that is reachable via the public Network Load Balancer (NLB).
 
 ![](../images/image-t3-14.png)
 

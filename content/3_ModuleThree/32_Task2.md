@@ -15,10 +15,10 @@ weight: 2
 
 ![](../images/image-t2-2.png)
 
-- 3.  In the FortiGate CNF Console, provide your AWS account ID and select Launch CloudFormation Template. This will redirect you to the CloudFormation Console in your AWS account in the us-west-2 region.
+- 3.  In the FortiGate CNF Console, provide your AWS account ID and select Launch CloudFormation Template. This will redirect you to the CloudFormation Console in your AWS account in the us-west-2 region. **This should complete in 1-2 minutes**.
 
 {{% notice info %}}
-**Note:** Your browser may block the popup window to launch the CloudFormation console.  Please check your browser for blocked popup notifications.
+**Note:** Your browser may block the popup window to launch the CloudFormation console. Please check your browser for blocked popup notifications.
 {{% /notice %}}
 
 ![](../images/image-t2-3.png)
