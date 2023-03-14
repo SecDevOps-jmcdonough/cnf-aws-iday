@@ -73,4 +73,10 @@ weight: 3
 
 ![](../images/image-t6-58.png)
 
-- 7.  This concludes this section.
+- 7.  In the top left, click **FortiView** then click **Log View** then select FortiGate -> Security -> Intrusion Prevention. **Double click any log entry** to view the log details. 
+
+![](../images/image-t6-59.png)
+
+![](../images/image-t6-60.png)
+
+- 8.  This concludes this section.

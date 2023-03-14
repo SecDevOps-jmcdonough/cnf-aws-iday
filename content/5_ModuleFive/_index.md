@@ -18,6 +18,8 @@ This will give you another environment to do the following:
   * Inspect drill down widgets in FortiView
   * Inspect formatted logs in Log View
 
+![](./images/image-extracredit-diag1.png)
+
 {{% notice tip %}}
 If you are short on time, we recommend scrolling through the section to see how easy it is to accomplish the tasks above and enjoy the results!
 {{% /notice %}}
