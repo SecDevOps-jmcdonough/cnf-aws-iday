@@ -39,7 +39,7 @@ weight: 2
 
 ![](../images/image-t2-4.png)
 
-- 6.  Once the CloudFormation template has been created successfully, you should see your account showing **Success** in the AWS account page of FortiGate CNF.
+- 6.  Once the CloudFormation template has been created successfully in the CloudFormation Console, in the FortGate CNF console click **OK** you should see your account showing **Success** in the AWS account page of FortiGate CNF.
 
 ![](../images/image-t2-5.png)
 
