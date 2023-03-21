@@ -11,7 +11,7 @@ weight: 2
 
 ![](../images/image-t2-1.png)
 
-- 2.  In a new browser tab, log into your AWS account and click on your **IAM user name in the upper right corner**. This will allow you to see and copy your AWS account ID.
+- 2.  In a new browser tab, log into your AWS account and click on your **IAM user name in the upper right corner**. This will allow you to see and **copy your AWS account ID**.
 
 ![](../images/image-t2-2.png)
 
