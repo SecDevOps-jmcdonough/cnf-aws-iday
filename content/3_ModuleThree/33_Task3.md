@@ -23,6 +23,7 @@ weight: 3
   * us-west-2 (Oregon)
   * eu-central-1 (Frankfurt)
   * eu-west-1 (Ireland)
+  * eu-west-2 (London)
   * ap-northeast-1 (Tokyo)
 
 ![](../images/image-t3-2.png)
